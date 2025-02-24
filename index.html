@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMCHISHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KIMCHISHOP</h1>
+        </header>
+
+        <section class="products">
+            <div class="product">
+                <h3>Kimchi Tradicional</h3>
+                <p>450ml - 130 Pesos / 950ml - 240 Pesos</p>
+                <input type="number" id="tradicional450ml" value="0" min="0" placeholder="piezas">
+                <input type="number" id="tradicional950ml" value="0" min="0" placeholder="piezas">
+            </div>
+
+            <div class="product">
+                <h3>Kimchi Rabano</h3>
+                <p>450ml - 130 Pesos / 950ml - 240 Pesos</p>
+                <input type="number" id="Rabano450ml" value="0" min="0" placeholder="piezas">
+                <input type="number" id="Rabano950ml" value="0" min="0" placeholder="piezas">
+            </div>
+
+            <div class="product">
+                <h3>Kimchi Cebollin</h3>
+                <p>450ml - 130 Pesos / 950ml - 240 Pesos</p>
+                <input type="number" id="Cebollin450ml" value="0" min="0" placeholder="piezas">
+                <input type="number" id="Cebollin950ml" value="0" min="0" placeholder="piezas">
+            </div>
+        </section>
+
+        <section class="customer-info">
+            <p>*Pedido superior a 500 Pesos tiene envío gratis</p>
+            <h3>Información del Comprador</h3>
+            <input type="text" id="customerName" placeholder="Nombre">
+            <input type="text" id="customerPhone" placeholder="Número de Teléfono">
+            <input type="text" id="customerAddress" placeholder="Dirección">
+            <p>(Recojo en persona) Circuito Altos Juriquilla 1121 Privada Serena</p>
+        
+            <h3>Método de Pago</h3>
+            <div class="payment-methods">
+                <label><input type="radio" name="paymentMethod" value="Efectivo"> Efectivo</label>
+                <label><input type="radio" name="paymentMethod" value="Transferencia Bancaria"> Transferencia Bancaria</label>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <button onclick="calculateTotal()">Hacer un pedido</button>
+            <h2 id="totalPrice"></h2>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
